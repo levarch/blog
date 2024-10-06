@@ -1,0 +1,111 @@
+baseURL: https://blog.levarc.com/
+languageCode: en-us
+title: LevArc blog
+theme: PaperMod
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+services:
+  googleAnalytics:
+    ID: G-KWYLJH7QDH
+
+outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON
+
+params:
+  env: production
+  keywords: [Blog, Automation, DevOps, SRE, AWS, Cloud]
+  author: Lev Pa
+  contact:
+      email: support@levarc.com
+  subtitle: all about tech
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+    favicon: /img/favicon.ico
+    favicon16x16: /img/favicon-16x16.png
+    favicon32x32: /img/favicon-32x32.png
+    apple_touch_icon: /img/apple-touch-icon.png
+    safari_pinned_tab: /img/safari-pinned-tab.svg
+
+  label:
+    text: ""
+
+  profileMode:
+    enabled: false
+
+  cover:
+    hidden: false
+    hiddenInList: true
+    hiddenInSingle: false
+
+  editPost:
+    URL: "https://github.com/levarch/blog/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 4
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: gitHub
+      name: GitHub
+      url: https://github.com/levarch
+      weight: 30
