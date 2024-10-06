@@ -31,7 +31,7 @@ params:
       email: support@levarc.com
   subtitle: all about tech
   DateFormat: "January 2, 2006"
-  defaultTheme: dark
+  defaultTheme: auto
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -75,7 +75,7 @@ params:
 
   cover:
     hidden: false
-    hiddenInList: true
+    hiddenInList: false
     hiddenInSingle: false
 
   editPost:
